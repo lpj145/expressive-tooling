@@ -3,15 +3,12 @@
 
 function copyToolToRoot($rootDir) {
     $templateFile = dirname(__FILE__).'/../template/expressive.php';
-    $initAppString = <<<EOT
-        #!/usr/bin/env php
-        <?php
-        EOT;
+    $initAppString = "#!/usr/bin/env php";
 
     $appTemplate = file_get_contents($templateFile);
     $appTemplate = $initAppString . $appTemplate;
 
-    file_put_contents($rootDir.'app', $appTemplate);
+    file_put_contents(realpath($rootDir).'app', $appTemplate);
 }
 
 $rootDir = dirname(__FILE__);

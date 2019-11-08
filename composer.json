@@ -20,7 +20,7 @@
         }
     },
     "suggest": {
-        "composer tooling-install": "composer run tooling-install to copy app for project folder."
+        "composer tooling-install": "run vendor\\bin\\tooling-install to copy app for project folder."
     },
     "bin": [
         "bin/tooling-install"
