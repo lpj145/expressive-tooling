@@ -31,11 +31,12 @@ class Installer
         $templateFile = dirname(__FILE__).'/../bin/expressive.php';
         $initAppString = <<<EOT
         #!/usr/bin/env php
-<?php
+        <?php
         EOT;
 
         $appTemplate = file_get_contents($templateFile);
+        $appTemplate = $initAppString . $appTemplate;
 
-        file_put_contents($rootDir.'app', $initAppString . $appTemplate);
+        file_put_contents($rootDir.'app', $appTemplate);
     }
 }
