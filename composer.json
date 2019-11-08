@@ -1,0 +1,27 @@
+{
+    "name": "mdantas/expressive-tooling",
+    "description": "Is a clear and enhancement fork from zend-expressive-tooling, yes, expressive need to say and grow.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcos Dantas",
+            "email": "marcos.adantas@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2",
+        "zendframework/zend-expressive-tooling": "^1.2@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "mdantas\\Expressive\\Tooling\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-package-install": [
+            "php -r \"copy('bin/expressive', './app');\""
+        ]
+    }
+}
