@@ -1,7 +1,7 @@
 <?php
 
 function copyToolToRoot($rootDir) {
-    $templateFile = dirname(__FILE__).'/../bin/expressive.php';
+    $templateFile = dirname(__FILE__).'/../template/expressive.php';
     $initAppString = <<<EOT
         #!/usr/bin/env php
         <?php
