@@ -14,14 +14,17 @@
         "php": "^7.2",
         "zendframework/zend-expressive-tooling": "^1.2@dev"
     },
+    "require-dev": {
+        "composer/composer": "1.9.1"
+    },
     "autoload": {
         "psr-4": {
             "mdantas\\Expressive\\Tooling\\": "src/"
         }
     },
     "scripts": {
-        "post-package-install": [
-            "php -r \"copy('bin/expressive', './app');\""
+        "post-install-cmd": [
+            "mdantas\\Expressive\\Tooling\\Installer::postInstall"
         ]
     }
 }
