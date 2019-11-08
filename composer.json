@@ -20,9 +20,9 @@
         }
     },
     "suggest": {
-        "tooling-install": "Need to copy app to root project folder."
+        "composer tooling-install": "composer run tooling-install to copy app for project folder."
     },
     "bin": [
-        "bin/tooling-install.php"
+        "bin/tooling-install"
     ]
 }
