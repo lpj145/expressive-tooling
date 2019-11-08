@@ -14,17 +14,15 @@
         "php": "^7.2",
         "zendframework/zend-expressive-tooling": "^1.2@dev"
     },
-    "require-dev": {
-        "composer/composer": "1.9.1"
-    },
     "autoload": {
         "psr-4": {
             "mdantas\\Expressive\\Tooling\\": "src/"
         }
     },
-    "scripts": {
-        "post-install-cmd": [
-            "mdantas\\Expressive\\Tooling\\Installer::postInstall"
-        ]
-    }
+    "suggest": {
+        "tooling-install": "Need to copy app to root project folder."
+    },
+    "bin": [
+        "bin/tooling-install"
+    ]
 }
