@@ -23,6 +23,6 @@
         "tooling-install": "Need to copy app to root project folder."
     },
     "bin": [
-        "bin/tooling-install"
+        "bin/tooling-install.php"
     ]
 }
