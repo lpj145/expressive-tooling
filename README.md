@@ -15,6 +15,7 @@ app commands %arguments
 
 
 ###Available Commands
+
 debug:routes
 
 debug:container
