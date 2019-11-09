@@ -2,7 +2,7 @@
 /**
  * Date: 08/11/2019
  * @see       https://github.com/lpj145/expressive-tooling for the canonical source repository
- * @license   https://github.com/lpj145/expressive-tooling/blob/master/LICENSE.md MIT License
+ * @license   https://raw.githubusercontent.com/lpj145/expressive-tooling/master/LICENSE MIT License
  */
 
 declare(strict_types=1);
