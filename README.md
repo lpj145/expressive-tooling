@@ -4,8 +4,11 @@ Based on [Zend Expressive tooling](https://www.google.com) package, i decide cre
 ````bash
 composer require mdantas/expressive-tooling
 ````
-
-After installation, composer try to copy app file for the root directory, is a new entry point of console.
+### After Installation
+````bash
+#to copy console app for project root.
+\vendor\bin\tooling-installation 
+````
 
 
 ### Use
@@ -16,7 +19,9 @@ app commands %arguments
 
 ### Available Commands
 
-debug:routes
+__debug:routes__ show available routes.
 
-debug:container
+__debug:container__ show container, need to more improvements.
+
+__debug:config__ dump config array.
 
